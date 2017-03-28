@@ -1,0 +1,4 @@
+#!/bin/bash
+makepkg -od
+makepkg --printsrcinfo > .SRCINFO
+git add PKGBUILD .SRCINFO && git commit -m "`date`"

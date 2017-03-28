@@ -1,0 +1,3 @@
+#!/bin/bash
+nvchecker source.ini
+awk '{print $1}' < new_ver.txt | xargs -i git clone git+ssh://aur@aur.archlinux.org/{}.git
