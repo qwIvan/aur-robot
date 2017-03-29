@@ -14,8 +14,8 @@ vim source.ini  # using nvchecker, example in https://github.com/lilydjwg/nvchec
 ```
 vim source.ini  # using nvchecker, example in https://github.com/lilydjwg/nvchecker/blob/master/sample_source.ini
 docker run \
--v ~/.gitconfig:/home/robot/.gitconfig \
--v ~/.ssh/id_rsa:/home/robot/.ssh/id_rsa \
--v source.ini:/home/robot/source.ini \
-qwivan/aur-robot
+  -v ~/.gitconfig:/home/robot/.gitconfig \
+  -v ~/.ssh/id_rsa:/home/robot/.ssh/id_rsa \
+  -v source.ini:/home/robot/source.ini \
+  qwivan/aur-robot
 ```
